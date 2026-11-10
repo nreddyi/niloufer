@@ -1,4 +1,4 @@
-/* Café Niloufer — "classic" homepage scripts (no dependencies) */
+/* Café Niloufer — "classic: Royal Hyderabadi" homepage scripts (no dependencies) */
 (function () {
   'use strict';
 
@@ -29,7 +29,7 @@
 
   /* ----------------------------------------------------------
      2. Hero height + mobile menu
-     --chrome-h = everything above the hero (top bar, crest, menu),
+     --chrome-h = everything above the hero (strip + header),
      so the slider ends exactly at the bottom of the screen.
      ---------------------------------------------------------- */
   var slider = document.getElementById('heroSlider');
@@ -54,11 +54,11 @@
   /* ----------------------------------------------------------
      3. Hero slider
      Autoplays every 6s; pauses on hover / focus / Pause button;
-     arrows, diamond dots, keyboard and swipe.
+     arrows, roman-numeral buttons, keyboard and swipe.
      ---------------------------------------------------------- */
   if (slider) {
     var slides = slider.querySelectorAll('.slide');
-    var dots = slider.querySelectorAll('.dot');
+    var numerals = slider.querySelectorAll('.numeral');
     var pauseBtn = document.getElementById('sliderPause');
     var DELAY = 6000;
     var current = 0;
@@ -74,9 +74,9 @@
         s.setAttribute('aria-hidden', String(!active));
         if (active) { s.removeAttribute('inert'); } else { s.setAttribute('inert', ''); }
       });
-      dots.forEach(function (d, i) {
-        d.classList.toggle('is-active', i === current);
-        if (i === current) { d.setAttribute('aria-current', 'true'); } else { d.removeAttribute('aria-current'); }
+      numerals.forEach(function (n, i) {
+        n.classList.toggle('is-active', i === current);
+        if (i === current) { n.setAttribute('aria-current', 'true'); } else { n.removeAttribute('aria-current'); }
       });
     }
 
@@ -91,11 +91,11 @@
       pauseBtn.textContent = userPaused ? 'Play' : 'Pause';
     }
 
-    slider.querySelectorAll('.hero-arrow').forEach(function (btn) {
+    slider.querySelectorAll('.hero-step').forEach(function (btn) {
       btn.addEventListener('click', function () { show(current + Number(btn.dataset.dir)); start(); });
     });
-    dots.forEach(function (dot, i) {
-      dot.addEventListener('click', function () { show(i); start(); });
+    numerals.forEach(function (n, i) {
+      n.addEventListener('click', function () { show(i); start(); });
     });
     pauseBtn.addEventListener('click', function () { userPaused = !userPaused; syncPauseBtn(); start(); });
 
@@ -124,10 +124,11 @@
   }
 
   /* ----------------------------------------------------------
-     4. Best-seller filters
+     4. Best sellers: filters + carousel arrows
      ---------------------------------------------------------- */
   var filters = document.querySelectorAll('.filter[data-filter]');
-  var products = document.querySelectorAll('#productGrid .product');
+  var rail = document.getElementById('bestRail');
+  var cards = rail ? rail.querySelectorAll('.card') : [];
 
   filters.forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -137,9 +138,17 @@
         f.classList.toggle('is-active', active);
         f.setAttribute('aria-pressed', String(active));
       });
-      products.forEach(function (p) {
-        p.hidden = !(filter === 'all' || p.dataset.cat === filter);
+      cards.forEach(function (c) {
+        c.hidden = !(filter === 'all' || c.dataset.cat === filter);
       });
+      rail.scrollTo({ left: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+  });
+
+  document.querySelectorAll('.round-btn[data-rail]').forEach(function (btn) {
+    var target = document.getElementById(btn.dataset.rail);
+    btn.addEventListener('click', function () {
+      target.scrollBy({ left: Number(btn.dataset.dir) * target.clientWidth * 0.8, behavior: reduceMotion ? 'auto' : 'smooth' });
     });
   });
 
@@ -176,7 +185,7 @@
      7. Scroll reveal
      ---------------------------------------------------------- */
   var revealTargets = document.querySelectorAll(
-    '.title, .welcome .narrow, .facts, .arch, .product, .frames, .heritage-copy, .gift-feature, .invitation, .reel-row li, .footer-crest, .footer-cols > *'
+    '.head, .intro-row > *, .intro-copy, .mosaic-feature, .mosaic-grid li, .band-copy, .gift, .workshop-grid > *, .reel-row li, .footer-top > *'
   );
 
   if ('IntersectionObserver' in window) {
