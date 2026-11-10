@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Café Niloufer – The Traditional Hyderabadi Café</title>
+  <meta name="description" content="Niloufer tea powders, Osmania biscuits and gift boxes from Hyderabad's Café Niloufer. Order online for home delivery.">
+  <meta name="theme-color" content="#120c08">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style-dark.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ======================================================
+     SECTION: ticker   (Shopify: sections/announcement-bar.liquid)
+     ====================================================== -->
+<div class="ticker">
+  <div class="ticker-track">
+    <p class="ticker-group">
+      <a href="/collections/our-products">Skip the line, order online</a><i></i>
+      <span>Brewing since 1978</span><i></i>
+      <span>Five outlets across Hyderabad</span><i></i>
+      <span>Tea powders · Osmania biscuits · Gift boxes</span><i></i>
+    </p>
+    <p class="ticker-group" aria-hidden="true">
+      <span>Skip the line, order online</span><i></i>
+      <span>Brewing since 1978</span><i></i>
+      <span>Five outlets across Hyderabad</span><i></i>
+      <span>Tea powders · Osmania biscuits · Gift boxes</span><i></i>
+    </p>
+  </div>
+</div>
+
+<!-- ======================================================
+     SECTION: header   (Shopify: sections/header.liquid)
+     Menu button + logo, search, account, cart (opens drawer)
+     ====================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <button class="icon-btn" id="menuOpen" aria-label="Open menu" aria-haspopup="dialog" aria-controls="menuDrawer">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
+    </button>
+
+    <a class="logo" href="/" aria-label="Café Niloufer home">
+      <img src="images/logo.png" data-remote="logo_360x_3a3f6a04-b109-4e88-97f9-b49ac4675c0d.png" data-w="360" alt="Café Niloufer" width="150" height="83">
+    </a>
+
+    <form class="search" role="search" action="/search" method="get">
+      <label class="sr-only" for="searchInput">Search the store</label>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="searchInput" type="search" name="q" placeholder="Search for tea powder" autocomplete="off">
+    </form>
+
+    <div class="header-actions">
+      <a class="icon-btn" href="/account" aria-label="Account">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+      </a>
+      <button class="icon-btn cart-btn" id="cartOpen" aria-label="Open cart" aria-haspopup="dialog" aria-controls="cartDrawer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11H6.2L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ======================================================
+     SECTION: category tabs   (Shopify: sections/category-tabs.liquid)
+     ====================================================== -->
+<nav class="cat-tabs" aria-label="Categories">
+  <ul class="wrap">
+    <li><a class="cat-tab is-active" href="/collections/our-products" aria-current="page">
+      <span class="cat-thumb cat-thumb-all" aria-hidden="true">All</span><span>Home</span></a></li>
+    <li><a class="cat-tab" href="/collections/tea-powder">
+      <span class="cat-thumb"><img src="images/tea-platinum.webp" data-remote="Niloufer_Platinum_Tea_Powder.webp" data-w="300" alt="" width="120" height="120"></span><span>Tea Powder</span></a></li>
+    <li><a class="cat-tab" href="/collections/cookies">
+      <span class="cat-thumb"><img src="images/osmania-biscuits.webp" data-remote="p0qzdfdmgume7hkc4ddv.webp" data-w="300" alt="" width="120" height="120"></span><span>Cookies</span></a></li>
+    <li><a class="cat-tab" href="/collections/combo">
+      <span class="cat-thumb"><img src="images/combo-osmania-tea.png" data-remote="Combo1_option1.png" data-w="300" alt="" width="120" height="120"></span><span>Combos</span></a></li>
+    <li><a class="cat-tab" href="/collections/gift-hampers">
+      <span class="cat-thumb"><img src="images/gift-delights.webp" data-remote="DelightsBox_Hires_800x_1d683445-12c7-41b7-adcd-f24d6c4b3e09.webp" data-w="300" alt="" width="120" height="120"></span><span>Gift Hampers</span></a></li>
+    <li><a class="cat-tab" href="/collections/chocolates">
+      <!-- No chocolates image on the current site: add images/chocolates.jpg -->
+      <span class="cat-thumb cat-thumb-empty" aria-hidden="true">+</span><span>Chocolates</span></a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+<!-- ======================================================
+     SECTION: hero carousel   (Shopify: sections/slideshow.liquid)
+     Full width; height = screen height minus everything above it.
+     ====================================================== -->
+<section class="hero" id="heroSlider" role="region" aria-roledescription="carousel" aria-label="Featured">
+  <div class="slides">
+    <article class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 5">
+      <div class="slide-bg"><img src="images/banner-tea.png" data-remote="NC_Web_1920x800_final.png" data-w="1920" alt="" width="1920" height="800"></div>
+      <div class="wrap slide-copy">
+        <p class="kicker">Niloufer tea powders</p>
+        <h1 class="slide-title">Handpicked from the finest, serving only the best.</h1>
+        <a class="btn btn-accent" href="/collections/tea-powder">Shop tea powder</a>
+      </div>
+    </article>
+    <article class="slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+      <div class="slide-bg"><img src="images/banner-biscuits.jpg" data-remote="CF_Niloufer_fruit_biscuit_web_banner_301025.jpg" data-w="1920" alt="" loading="lazy" width="1920" height="800"></div>
+      <div class="wrap slide-copy">
+        <p class="kicker">Fruit biscuits</p>
+        <h2 class="slide-title">Newly improved taste, same indulgence.</h2>
+        <a class="btn btn-accent" href="/collections/cookies">Shop cookies</a>
+      </div>
+    </article>
+    <article class="slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+      <div class="slide-bg"><img src="images/banner-gifts.webp" data-remote="GIFT_BOX.webp" data-w="1920" alt="" loading="lazy" width="1920" height="800"></div>
+      <div class="wrap slide-copy">
+        <p class="kicker">Treazures gift boxes</p>
+        <h2 class="slide-title">Pleazures of gifting.</h2>
+        <a class="btn btn-accent" href="/collections/gift-hampers">Shop gift hampers</a>
+      </div>
+    </article>
+    <article class="slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+      <div class="slide-bg"><img src="images/banner-tearoom.webp" data-remote="TEA_ROOMS_BANNER.webp" data-w="1920" alt="" loading="lazy" width="1920" height="800"></div>
+      <div class="wrap slide-copy">
+        <p class="kicker">Tea rooms</p>
+        <h2 class="slide-title">A shelter to gossip, fun and lots of love.</h2>
+        <a class="btn btn-accent" href="/pages/outlets">Find an outlet</a>
+      </div>
+    </article>
+    <article class="slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+      <div class="slide-bg"><img src="images/banner-order.webp" data-remote="ONLINE_ORDER.webp" data-w="1920" alt="" loading="lazy" width="1920" height="800"></div>
+      <div class="wrap slide-copy">
+        <p class="kicker">Shop your favourites</p>
+        <h2 class="slide-title">Skip the line, order online.</h2>
+        <a class="btn btn-accent" href="/collections/our-products">Shop now</a>
+      </div>
+    </article>
+  </div>
+
+  <button class="hero-arrow hero-prev" data-dir="-1" aria-label="Previous slide">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+  </button>
+  <button class="hero-arrow hero-next" data-dir="1" aria-label="Next slide">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </button>
+  <div class="hero-nav">
+    <div class="dots">
+      <button class="dot is-active" aria-label="Go to slide 1" aria-current="true"></button>
+      <button class="dot" aria-label="Go to slide 2"></button>
+      <button class="dot" aria-label="Go to slide 3"></button>
+      <button class="dot" aria-label="Go to slide 4"></button>
+      <button class="dot" aria-label="Go to slide 5"></button>
+    </div>
+    <button class="hero-pause" id="sliderPause" aria-label="Pause slideshow" aria-pressed="false">
+      <svg class="ico-pause" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg>
+      <svg class="ico-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION: tagline band   (Shopify: sections/rich-text.liquid)
+     ====================================================== -->
+<section class="tagline">
+  <div class="wrap">
+    <p class="kicker">Since 1978</p>
+    <h2>The home of chai that is <em>truly Hyderabadi.</em></h2>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION: photo marquee   (Shopify: sections/image-marquee.liquid)
+     Decorative strip; second list is a duplicate for the loop.
+     ====================================================== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <ul>
+      <li><img src="images/story-1.png" data-remote="Frame_15.png" alt="" loading="lazy" width="323" height="405"></li>
+      <li><img src="images/combo-platinum.png" data-remote="Combo2_Final.png" alt="" loading="lazy" width="600" height="600"></li>
+      <li><img src="images/story-2.png" data-remote="Frame_14.png" alt="" loading="lazy" width="323" height="405"></li>
+      <li><img src="images/osmania-biscuits.webp" data-remote="p0qzdfdmgume7hkc4ddv.webp" alt="" loading="lazy" width="600" height="600"></li>
+      <li><img src="images/story-3.png" data-remote="Frame_16.png" alt="" loading="lazy" width="266" height="366"></li>
+      <li><img src="images/gift-delights.webp" data-remote="DelightsBox_Hires_800x_1d683445-12c7-41b7-adcd-f24d6c4b3e09.webp" alt="" loading="lazy" width="600" height="600"></li>
+      <li><img src="images/tea-supreme.webp" data-remote="Niloufer_Supreme_Tea_Powder_front.webp" alt="" loading="lazy" width="600" height="600"></li>
+    </ul>
+    <ul>
+      <li><img src="images/story-1.png" data-remote="Frame_15.png" alt="" loading="lazy" width="323" height="405"></li>
+      <li><img src="images/combo-platinum.png" data-remote="Combo2_Final.png" alt="" loading="lazy" width="600" height="600"></li>
+      <li><img src="images/story-2.png" data-remote="Frame_14.png" alt="" loading="lazy" width="323" height="405"></li>
+      <li><img src="images/osmania-biscuits.webp" data-remote="p0qzdfdmgume7hkc4ddv.webp" alt="" loading="lazy" width="600" height="600"></li>
+      <li><img src="images/story-3.png" data-remote="Frame_16.png" alt="" loading="lazy" width="266" height="366"></li>
+      <li><img src="images/gift-delights.webp" data-remote="DelightsBox_Hires_800x_1d683445-12c7-41b7-adcd-f24d6c4b3e09.webp" alt="" loading="lazy" width="600" height="600"></li>
+      <li><img src="images/tea-supreme.webp" data-remote="Niloufer_Supreme_Tea_Powder_front.webp" alt="" loading="lazy" width="600" height="600"></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ======================================================
+     SECTION: bestsellers carousel   (Shopify: sections/product-carousel.liquid)
+     Each .card = snippets/product-card.liquid
+     ====================================================== -->
+<section class="section" id="bestsellers">
+  <div class="wrap head">
+    <h2>Bestsellers</h2>
+    <div class="head-tools">
+      <a class="view-all" href="/collections/our-products">View all</a>
+      <button class="round-btn" data-rail="bestRail" data-dir="-1" aria-label="Scroll bestsellers back"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button class="round-btn" data-rail="bestRail" data-dir="1" aria-label="Scroll bestsellers forward"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+
+  <ul class="rail" id="bestRail" tabindex="0" aria-label="Bestsellers">
+    <li class="card">
+      <a class="card-media" href="/products/combo-3"><img src="images/combo-supreme.png" data-remote="Combo3_supreme.png" alt="Supreme tea powder with Osmania and fruit biscuits combo" loading="lazy" width="600" height="600"></a>
+      <div class="card-body">
+        <h3><a href="/products/combo-3">Supreme / Double Delight Tea Powder with Osmania &amp; Fruit Biscuits Combo</a></h3>
+        <p class="card-sub">Chai biscuit combo</p>
+        <p class="price"><b>₹520</b> <s>₹580</s> <span class="save">Save ₹60</span></p>
+        <button class="btn btn-accent add-to-cart" data-name="Supreme / Double Delight Combo" data-price="520">Add to cart</button>
+      </div>
+    </li>
+    <li class="card">
+      <a class="card-media" href="/products/combo-2"><img src="images/combo-platinum.png" data-remote="Combo2_Final.png" alt="Platinum tea powder with Osmania and fruit biscuits combo" loading="lazy" width="600" height="600"></a>
+      <div class="card-body">
+        <h3><a href="/products/combo-2">Platinum Tea Powder with Osmania &amp; Fruit Biscuits Combo</a></h3>
+        <p class="card-sub">Chai biscuit combo</p>
+        <p class="price"><b>₹570</b> <s>₹630</s> <span class="save">Save ₹60</span></p>
+        <button class="btn btn-accent add-to-cart" data-name="Platinum Tea Powder Combo" data-price="570">Add to cart</button>
+      </div>
+    </li>
+    <li class="card">
+      <a class="card-media" href="/products/combo-1"><img src="images/combo-osmania-tea.png" data-remote="Combo1_option1.png" alt="Osmania biscuits and tea powders combo" loading="lazy" width="600" height="600"></a>
+      <div class="card-body">
+        <h3><a href="/products/combo-1">Osmania and Tea Powders Combo</a></h3>
+        <p class="card-sub">Chai biscuit combo</p>
+        <p class="price"><b>₹300</b> <s>₹320</s> <span class="save">Save ₹20</span></p>
+        <button class="btn btn-accent add-to-cart" data-name="Osmania and Tea Powders Combo" data-price="300">Add to cart</button>
+      </div>
+    </li>
+    <li class="card">
+      <a class="card-media" href="/products/niloufer-platinum-tea-powder"><img src="images/tea-platinum.webp" data-remote="Niloufer_Platinum_Tea_Powder.webp" alt="Niloufer Platinum Tea Powder" loading="lazy" width="600" height="600"></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-platinum-tea-powder">Niloufer Platinum Tea Powder</a></h3>
+        <p class="card-sub">Tea powder <span class="rev">(3 reviews)</span></p>
+        <p class="price"><b>₹190</b></p>
+        <button class="btn btn-accent add-to-cart" data-name="Niloufer Platinum Tea Powder" data-price="190">Add to cart</button>
+      </div>
+    </li>
+    <li class="card">
+      <a class="card-media" href="/products/niloufer-double-delight-tea-powder"><img src="images/tea-double-delight.webp" data-remote="Niloufer_Double_Delight_Tea_Powder.webp" alt="Niloufer Double Delight Tea Powder" loading="lazy" width="600" height="600"></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-double-delight-tea-powder">Niloufer Double Delight Tea Powder</a></h3>
+        <p class="card-sub">Tea powder <span class="rev">(1 review)</span></p>
+        <p class="price"><b>₹160</b></p>
+        <button class="btn btn-accent add-to-cart" data-name="Niloufer Double Delight Tea Powder" data-price="160">Add to cart</button>
+      </div>
+    </li>
+    <li class="card">
+      <a class="card-media" href="/products/niloufer-supreme-dust-tea-powder"><img src="images/tea-supreme.webp" data-remote="Niloufer_Supreme_Tea_Powder_front.webp" alt="Niloufer Supreme Tea Powder" loading="lazy" width="600" height="600"></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-supreme-dust-tea-powder">Niloufer Supreme Tea Powder</a></h3>
+        <p class="card-sub">Tea powder</p>
+        <p class="price"><b>₹160</b></p>
+        <button class="btn btn-accent add-to-cart" data-name="Niloufer Supreme Tea Powder" data-price="160">Add to cart</button>
+      </div>
+    </li>
+    <li class="card">
+      <a class="card-media" href="/products/osmania-biscuits"><img src="images/osmania-biscuits.webp" data-remote="p0qzdfdmgume7hkc4ddv.webp" alt="Osmania Biscuits Classic" loading="lazy" width="600" height="600"></a>
+      <div class="card-body">
+        <h3><a href="/products/osmania-biscuits">Osmania Biscuits Classic</a></h3>
+        <p class="card-sub">Biscuits <span class="rev">(7 reviews)</span></p>
+        <p class="price"><b>₹60</b></p>
+        <button class="btn btn-accent add-to-cart" data-name="Osmania Biscuits Classic" data-price="60">Add to cart</button>
+      </div>
+    </li>
+    <li class="card">
+      <a class="card-media" href="/products/dry-fruit-biscuits"><img src="images/dry-fruit-biscuits.webp" data-remote="DryFruitBiscuits.webp" alt="Dry Fruit Biscuits" loading="lazy" width="600" height="600"></a>
+      <div class="card-body">
+        <h3><a href="/products/dry-fruit-biscuits">Dry Fruit Biscuits</a></h3>
+        <p class="card-sub">Biscuits <span class="rev">(1 review)</span></p>
+        <p class="price"><b>₹140</b></p>
+        <button class="btn btn-accent add-to-cart" data-name="Dry Fruit Biscuits" data-price="140">Add to cart</button>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- ======================================================
+     SECTION: brand banner   (Shopify: sections/image-with-text.liquid)
+     ====================================================== -->
+<section class="section brand">
+  <div class="wrap brand-grid">
+    <div class="brand-media">
+      <img src="images/story-2.png" data-remote="Frame_14.png" alt="Inside Café Niloufer" loading="lazy" width="323" height="405">
+      <p class="brand-stamp"><b>1978</b><span>Founded by Sri A. Babu Rao</span></p>
+    </div>
+    <div class="brand-copy">
+      <p class="kicker">Our story</p>
+      <h2>Hyderabad's chai, poured since 1978.</h2>
+      <p>Sri A. Babu Rao founded Café Niloufer in 1978. Five outlets later, the city still stops here for its cup, and the same blend goes into every pack of Niloufer tea powder we sell.</p>
+      <a class="btn btn-outline" href="/pages/about-cafe-niloufer">Read our story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION: gifting grid   (Shopify: sections/featured-collection.liquid, gift-hampers)
+     ====================================================== -->
+<section class="section section-panel">
+  <div class="wrap head">
+    <div>
+      <p class="kicker">Treazures gift boxes</p>
+      <h2>Gift the taste of Hyderabad</h2>
+    </div>
+    <div class="head-tools"><a class="view-all" href="/collections/gift-hampers">View all</a></div>
+  </div>
+
+  <ul class="wrap grid">
+    <li class="card">
+      <a class="card-media" href="/products/niloufer-delights-box"><img src="images/gift-delights.webp" data-remote="DelightsBox_Hires_800x_1d683445-12c7-41b7-adcd-f24d6c4b3e09.webp" alt="Niloufer Delights Box" loading="lazy" width="600" height="600"><span class="flag flag-ok">In stock</span></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-delights-box">Niloufer Delights Box</a></h3>
+        <p class="card-sub">Gift box</p>
+        <p class="price"><b>₹750</b></p>
+        <button class="btn btn-accent add-to-cart" data-name="Niloufer Delights Box" data-price="750">Add to cart</button>
+      </div>
+    </li>
+    <li class="card is-out">
+      <a class="card-media" href="/products/niloufer-mini-combo-box-copy"><img src="images/gift-premium-cookies.webp" data-remote="premco2.webp" alt="Niloufer Premium Cookies Box" loading="lazy" width="600" height="600"><span class="flag">Sold out</span></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-mini-combo-box-copy">Niloufer Premium Cookies Box</a></h3>
+        <p class="card-sub">Gift box</p>
+        <p class="price"><b>₹400</b></p>
+        <a class="btn btn-outline" href="/products/niloufer-mini-combo-box-copy">View product</a>
+      </div>
+    </li>
+    <li class="card is-out">
+      <a class="card-media" href="/products/niloufer-moments-box"><img src="images/gift-moments.webp" data-remote="moments1.webp" alt="Niloufer Moments Box" loading="lazy" width="600" height="600"><span class="flag">Sold out</span></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-moments-box">Niloufer Moments Box</a></h3>
+        <p class="card-sub">Gift box</p>
+        <p class="price"><b>₹1,000</b></p>
+        <a class="btn btn-outline" href="/products/niloufer-moments-box">View product</a>
+      </div>
+    </li>
+    <li class="card is-out">
+      <a class="card-media" href="/products/niloufer-mini-combo-box"><img src="images/gift-mini-combo.webp" data-remote="minic1.webp" alt="Niloufer Mini Combo Box" loading="lazy" width="600" height="600"><span class="flag">Sold out</span></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-mini-combo-box">Niloufer Mini Combo Box</a></h3>
+        <p class="card-sub">Gift box</p>
+        <p class="price"><b>₹1,200</b></p>
+        <a class="btn btn-outline" href="/products/niloufer-mini-combo-box">View product</a>
+      </div>
+    </li>
+    <li class="card is-out">
+      <a class="card-media" href="/products/niloufer-signature-box"><img src="images/gift-signature.webp" data-remote="SignatureBox_Hires_800x_bc8c926b-0362-4656-8bd1-b0b54046f249.webp" alt="Niloufer Signature Box" loading="lazy" width="600" height="600"><span class="flag">Sold out</span></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-signature-box">Niloufer Signature Box</a></h3>
+        <p class="card-sub">Gift box</p>
+        <p class="price"><b>₹1,500</b></p>
+        <a class="btn btn-outline" href="/products/niloufer-signature-box">View product</a>
+      </div>
+    </li>
+    <li class="card is-out">
+      <a class="card-media" href="/products/niloufer-flip-box"><img src="images/gift-flip.webp" data-remote="flip1.webp" alt="Niloufer Flip Box" loading="lazy" width="600" height="600"><span class="flag">Sold out</span></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-flip-box">Niloufer Flip Box</a></h3>
+        <p class="card-sub">Gift box</p>
+        <p class="price"><b>₹2,800</b></p>
+        <a class="btn btn-outline" href="/products/niloufer-flip-box">View product</a>
+      </div>
+    </li>
+    <li class="card is-out">
+      <a class="card-media" href="/products/niloufer-hamper-box"><img src="images/gift-hamper.webp" data-remote="hamper1.webp" alt="Niloufer Hamper Box" loading="lazy" width="600" height="600"><span class="flag">Sold out</span></a>
+      <div class="card-body">
+        <h3><a href="/products/niloufer-hamper-box">Niloufer Hamper Box</a></h3>
+        <p class="card-sub">Gift box</p>
+        <p class="price"><b>₹3,500</b></p>
+        <a class="btn btn-outline" href="/products/niloufer-hamper-box">View product</a>
+      </div>
+    </li>
+    <li class="card card-cta">
+      <a href="/collections/gift-hampers">
+        <span>All gift hampers</span>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- ======================================================
+     SECTION: reels   (Shopify: sections/video-reels.liquid)
+     Videos stream muted from the store's Shopify CDN.
+     ====================================================== -->
+<section class="section">
+  <div class="wrap head">
+    <div>
+      <p class="kicker">30,000+ followers on Instagram</p>
+      <h2>Chai that makes the world stop</h2>
+    </div>
+    <div class="head-tools"><a class="view-all" href="https://instagram.com/cafeniloufer" target="_blank" rel="noopener">Follow @cafeniloufer</a></div>
+  </div>
+  <ul class="rail reel-rail" tabindex="0" aria-label="Reels">
+    <li><video class="reel" src="https://cdn.shopify.com/videos/c/o/v/871a929974e74d28b8a25bc37b8aa121.mp4" muted loop playsinline preload="metadata" aria-label="Café Niloufer reel 1"></video></li>
+    <li><video class="reel" src="https://cdn.shopify.com/videos/c/o/v/c5cc48135465484594ba225d9385c2f6.mp4" muted loop playsinline preload="metadata" aria-label="Café Niloufer reel 2"></video></li>
+    <li><video class="reel" src="https://cdn.shopify.com/videos/c/o/v/4848a76bdaad4c74bbf25155cf649064.mp4" muted loop playsinline preload="metadata" aria-label="Café Niloufer reel 3"></video></li>
+    <li><video class="reel" src="https://cdn.shopify.com/videos/c/o/v/c1b2de1c08d44017b98b6b99db3dd102.mp4" muted loop playsinline preload="metadata" aria-label="Café Niloufer reel 4"></video></li>
+    <li><video class="reel" src="https://cdn.shopify.com/videos/c/o/v/f989122980754f1e8ee32541cb2808a5.mp4" muted loop playsinline preload="metadata" aria-label="Café Niloufer reel 5"></video></li>
+  </ul>
+</section>
+
+<!-- ======================================================
+     SECTION: big category links   (Shopify: sections/link-row.liquid)
+     ====================================================== -->
+<nav class="big-links" aria-label="Shop by category">
+  <ul class="wrap">
+    <li><a href="/collections/tea-powder">Tea Powder</a></li>
+    <li><a href="/collections/cookies">Cookies</a></li>
+    <li><a href="/collections/chocolates">Chocolates</a></li>
+    <li><a href="/collections/gift-hampers">Gift Hampers</a></li>
+    <li><a href="/collections/combo">Chai Biscuit Combos</a></li>
+  </ul>
+</nav>
+
+<!-- ======================================================
+     SECTION: tea workshop   (Shopify: sections/event-banner.liquid)
+     ====================================================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="event">
+      <div class="event-copy">
+        <p class="kicker">Tea workshop</p>
+        <h2>Reserve your seat at the Niloufer Tea Workshop</h2>
+        <p>A hands-on session on tea blending, tasting and sourcing.</p>
+      </div>
+      <dl class="event-facts">
+        <div><dt>Registration</dt><dd>₹1,500</dd></div>
+        <div><dt>Time</dt><dd>12 PM</dd></div>
+        <div><dt>Next sessions</dt><dd class="todo">[Add upcoming dates]</dd></div>
+      </dl>
+      <a class="btn btn-dark" href="/pages/tea-workshop">Reserve a seat</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION: trust tiles   (Shopify: sections/icon-tiles.liquid)
+     ====================================================== -->
+<section class="section section-panel">
+  <div class="wrap head"><h2>Café Niloufer at a glance</h2></div>
+  <ul class="wrap tiles">
+    <li class="tile">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V9Z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3c0 1.2 1 1.4 1 2.6M12 3c0 1.2 1 1.4 1 2.6"/></svg>
+      <b>Since 1978</b><span>Founded by Sri A. Babu Rao</span>
+    </li>
+    <li class="tile">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-10.5a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21Z"/><circle cx="12" cy="10.5" r="2.3"/></svg>
+      <b>5 outlets</b><span>Across Hyderabad</span>
+    </li>
+    <li class="tile">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.6 7.400h.01"/></svg>
+      <b>30,000+</b><span>Followers on Instagram</span>
+    </li>
+    <li class="tile">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+      <b>Order online</b><span>Delivered to your home</span>
+    </li>
+  </ul>
+</section>
+
+<!-- ======================================================
+     SECTION: outlets   (Shopify: sections/store-locator.liquid)
+     Addresses are not on the current homepage: fill each [Add address].
+     ====================================================== -->
+<section class="section">
+  <div class="wrap head">
+    <div>
+      <p class="kicker">Hyderabad</p>
+      <h2>Visit a Niloufer outlet</h2>
+    </div>
+    <div class="head-tools"><a class="view-all" href="/pages/outlets">All outlets</a></div>
+  </div>
+  <ul class="wrap outlets">
+    <li><a class="outlet" href="/pages/outlets"><i>01</i><b>Lakdikapul</b><span class="todo">[Add address]</span></a></li>
+    <li><a class="outlet" href="/pages/outlets"><i>02</i><b>Red Hills</b><span class="todo">[Add address]</span></a></li>
+    <li><a class="outlet" href="/pages/outlets"><i>03</i><b>Banjara Hills</b><span class="todo">[Add address]</span></a></li>
+    <li><a class="outlet" href="/pages/outlets"><i>04</i><b>Himayat Nagar</b><span class="todo">[Add address]</span></a></li>
+    <li><a class="outlet" href="/pages/outlets"><i>05</i><b>Hitec City</b><span class="todo">[Add address]</span></a></li>
+  </ul>
+</section>
+
+</main>
+
+<!-- ======================================================
+     SECTION: footer   (Shopify: sections/footer.liquid)
+     ====================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="pay-row">
+      <p>We accept</p>
+      <img src="images/payment.jpg" data-remote="payment.jpg" data-w="462" alt="Accepted payment methods" loading="lazy" width="231" height="38">
+    </div>
+
+    <div class="newsletter">
+      <img class="footer-logo" src="images/logo.png" data-remote="logo_360x_3a3f6a04-b109-4e88-97f9-b49ac4675c0d.png" data-w="360" alt="Café Niloufer" loading="lazy" width="150" height="83">
+      <div class="newsletter-main">
+        <h2>Get deals from the store</h2>
+        <form class="newsletter-form" action="#" method="post">
+          <label class="sr-only" for="nlEmail">Email address</label>
+          <input id="nlEmail" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+          <button class="btn btn-accent" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <nav aria-label="Shop">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="/collections/tea-powder">Tea Powder</a></li>
+          <li><a href="/collections/cookies">Cookies</a></li>
+          <li><a href="/collections/chocolates">Chocolates</a></li>
+          <li><a href="/collections/gift-hampers">Gift Hampers</a></li>
+          <li><a href="/collections/combo">Chai Biscuit Combos</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Information">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="/pages/about-cafe-niloufer">About Us</a></li>
+          <li><a href="/pages/niloufer-tea">Niloufer Tea</a></li>
+          <li><a href="/pages/outlets">Outlets</a></li>
+          <li><a href="/blogs/news">Blogs</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Customer service">
+        <h3>Customer service</h3>
+        <ul>
+          <li><a href="/pages/contact-us">Contact Us</a></li>
+          <li><a href="/policies/shipping-policy">Shipping Policy</a></li>
+          <li><a href="/policies/refund-policy">Refund Policy</a></li>
+          <li><a href="/policies/terms-of-service">Terms of Service</a></li>
+          <li><a href="/policies/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Café Niloufer">
+        <h3>Café Niloufer</h3>
+        <ul>
+          <li><a href="/pages/careers">Careers</a></li>
+          <li><a href="tel:+918466868670">+91 84668 68670</a></li>
+          <li><a href="mailto:feedback@cafeniloufer.com">feedback@cafeniloufer.com</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <ul class="social">
+        <li><a href="https://facebook.com/Cafeniloufer" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://instagram.com/cafeniloufer" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://twitter.com/cafe_niloufer" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://linkedin.com/company/café-niloufer" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+      <p>© 2026 ABR Cafe and Bakers Pvt. Ltd.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================================
+     DRAWERS   (Shopify: snippets/menu-drawer.liquid, snippets/cart-drawer.liquid)
+     ====================================================== -->
+<div class="overlay" id="overlay" hidden></div>
+
+<aside class="drawer drawer-left" id="menuDrawer" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <div class="drawer-head">
+    <p>Menu</p>
+    <button class="icon-btn" data-close aria-label="Close menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <nav class="drawer-nav" aria-label="Primary">
+    <ul>
+      <li><a href="/collections/our-products">All products</a></li>
+      <li><a href="/collections/tea-powder">Tea Powder</a></li>
+      <li><a href="/collections/cookies">Cookies</a></li>
+      <li><a href="/collections/chocolates">Chocolates</a></li>
+      <li><a href="/collections/gift-hampers">Gift Hampers</a></li>
+      <li><a href="/collections/combo">Chai Biscuit Combos</a></li>
+    </ul>
+    <ul class="drawer-minor">
+      <li><a href="/pages/niloufer-tea">Niloufer Tea</a></li>
+      <li><a href="/pages/outlets">Outlets</a></li>
+      <li><a href="/pages/about-cafe-niloufer">About Us</a></li>
+      <li><a href="/pages/careers">Careers</a></li>
+      <li><a href="/pages/contact-us">Contact Us</a></li>
+      <li><a href="/account">Log in</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<aside class="drawer drawer-right" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Cart" hidden>
+  <div class="drawer-head">
+    <p>Your cart</p>
+    <button class="icon-btn" data-close aria-label="Close cart"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <p class="cart-empty" id="cartEmpty">Your cart is empty.</p>
+  <ul class="cart-lines" id="cartLines" aria-live="polite"></ul>
+  <div class="cart-foot">
+    <p class="cart-total"><span>Total</span><b id="cartTotal">₹0</b></p>
+    <a class="btn btn-accent" href="/cart">Checkout</a>
+  </div>
+</aside>
+
+<script src="js/main-dark.js"></script>
+</body>
+</html>
