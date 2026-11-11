@@ -222,7 +222,7 @@
 </section>
 
 <!-- ======================================================
-     SECTION: bestsellers   (Shopify: sections/featured-collection.liquid)
+     SECTION: bestsellers carousel   (Shopify: sections/product-carousel.liquid)
      Each .card = snippets/product-card.liquid (same card layout as index-dark.html)
      ====================================================== -->
 <section class="section section-cream" id="bestsellers">
@@ -232,14 +232,20 @@
         <p class="kicker">What Hyderabad orders</p>
         <h2>Our bestsellers</h2>
       </div>
-      <div class="tabs" role="group" aria-label="Filter bestsellers">
+      <div class="head-tools">
+        <div class="tabs" role="group" aria-label="Filter bestsellers">
         <button type="button" class="tab is-active" data-filter="all" aria-pressed="true">All</button>
         <button type="button" class="tab" data-filter="tea" aria-pressed="false">Tea powder</button>
         <button type="button" class="tab" data-filter="biscuits" aria-pressed="false">Biscuits</button>
+          <button type="button" class="tab" data-filter="combo" aria-pressed="false">Combos</button>
+        </div>
+        <button class="round-btn" data-rail="productGrid" data-dir="-1" aria-label="Scroll bestsellers back"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button class="round-btn" data-rail="productGrid" data-dir="1" aria-label="Scroll bestsellers forward"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
       </div>
     </div>
+  </div>
 
-    <ul class="product-grid" id="productGrid">
+  <ul class="rail" id="productGrid" tabindex="0" aria-label="Bestsellers">
       <li class="product card" data-cat="biscuits">
         <a class="card-media" href="/products/osmania-biscuits"><img src="images/osmania-biscuits.webp" data-remote="p0qzdfdmgume7hkc4ddv.webp" alt="Osmania Biscuits Classic" loading="lazy" width="600" height="600"><span class="flag">Most reviewed</span></a>
         <div class="card-body">
@@ -285,6 +291,33 @@
           <button type="button" class="btn btn-saffron add-to-cart">Add to cart</button>
         </div>
       </li>
+      <li class="product card" data-cat="combo">
+        <a class="card-media" href="/products/combo-3"><img src="images/combo-supreme.png" data-remote="Combo3_supreme.png" alt="Supreme tea powder with Osmania and fruit biscuits combo" loading="lazy" width="600" height="600"></a>
+        <div class="card-body">
+          <h3><a href="/products/combo-3">Supreme / Double Delight Tea Powder with Osmania &amp; Fruit Biscuits Combo</a></h3>
+          <p class="card-sub">Chai biscuit combo</p>
+          <p class="card-price"><b>₹520</b> <s>₹580</s> <span class="card-save">Save ₹60</span></p>
+          <button type="button" class="btn btn-saffron add-to-cart">Add to cart</button>
+        </div>
+      </li>
+      <li class="product card" data-cat="combo">
+        <a class="card-media" href="/products/combo-2"><img src="images/combo-platinum.png" data-remote="Combo2_Final.png" alt="Platinum tea powder with Osmania and fruit biscuits combo" loading="lazy" width="600" height="600"></a>
+        <div class="card-body">
+          <h3><a href="/products/combo-2">Platinum Tea Powder with Osmania &amp; Fruit Biscuits Combo</a></h3>
+          <p class="card-sub">Chai biscuit combo</p>
+          <p class="card-price"><b>₹570</b> <s>₹630</s> <span class="card-save">Save ₹60</span></p>
+          <button type="button" class="btn btn-saffron add-to-cart">Add to cart</button>
+        </div>
+      </li>
+      <li class="product card" data-cat="combo">
+        <a class="card-media" href="/products/combo-1"><img src="images/combo-osmania-tea.png" data-remote="Combo1_option1.png" alt="Osmania biscuits and tea powders combo" loading="lazy" width="600" height="600"></a>
+        <div class="card-body">
+          <h3><a href="/products/combo-1">Osmania and Tea Powders Combo</a></h3>
+          <p class="card-sub">Chai biscuit combo</p>
+          <p class="card-price"><b>₹300</b> <s>₹320</s> <span class="card-save">Save ₹20</span></p>
+          <button type="button" class="btn btn-saffron add-to-cart">Add to cart</button>
+        </div>
+      </li>
       <li class="product card card-cta" data-cat="all">
         <a href="/collections/combo">
           <span class="kicker">Better together</span>
@@ -292,8 +325,7 @@
           <span class="arrow" aria-hidden="true">→</span>
         </a>
       </li>
-    </ul>
-  </div>
+  </ul>
 </section>
 
 <!-- ======================================================

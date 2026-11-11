@@ -147,7 +147,7 @@
   });
 
   /* ----------------------------------------------------------
-     5. Bestseller tabs
+     5. Bestsellers: filter tabs + carousel arrows
      ---------------------------------------------------------- */
   var tabBtns = document.querySelectorAll('.tab[data-filter]');
   var products = document.querySelectorAll('#productGrid .product');
@@ -163,6 +163,16 @@
       products.forEach(function (p) {
         p.hidden = !(filter === 'all' || p.dataset.cat === filter || p.dataset.cat === 'all');
       });
+      var rail = document.getElementById('productGrid');
+      rail.scrollTo({ left: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+  });
+
+  /* carousel arrows (same as index-dark.html) */
+  document.querySelectorAll('.round-btn[data-rail]').forEach(function (btn) {
+    var rail = document.getElementById(btn.dataset.rail);
+    btn.addEventListener('click', function () {
+      rail.scrollBy({ left: Number(btn.dataset.dir) * rail.clientWidth * 0.8, behavior: reduceMotion ? 'auto' : 'smooth' });
     });
   });
 
