@@ -223,7 +223,7 @@
 
 <!-- ======================================================
      SECTION: bestsellers   (Shopify: sections/featured-collection.liquid)
-     Each .product = snippets/product-card.liquid
+     Each .card = snippets/product-card.liquid (same card layout as index-dark.html)
      ====================================================== -->
 <section class="section section-cream" id="bestsellers">
   <div class="wrap">
@@ -240,47 +240,52 @@
     </div>
 
     <ul class="product-grid" id="productGrid">
-      <li class="product" data-cat="biscuits">
-        <a class="product-media" href="/products/osmania-biscuits"><img src="images/osmania-biscuits.webp" data-remote="p0qzdfdmgume7hkc4ddv.webp" alt="Osmania Biscuits Classic" loading="lazy" width="600" height="600"><span class="tag">Most reviewed</span></a>
-        <div class="product-body">
-          <p class="reviews">7 reviews</p>
+      <li class="product card" data-cat="biscuits">
+        <a class="card-media" href="/products/osmania-biscuits"><img src="images/osmania-biscuits.webp" data-remote="p0qzdfdmgume7hkc4ddv.webp" alt="Osmania Biscuits Classic" loading="lazy" width="600" height="600"><span class="flag">Most reviewed</span></a>
+        <div class="card-body">
           <h3><a href="/products/osmania-biscuits">Osmania Biscuits Classic</a></h3>
-          <div class="buy"><p class="price"><b>₹60</b></p><button type="button" class="add add-to-cart" aria-label="Add Osmania Biscuits Classic to cart">+</button></div>
+          <p class="card-sub">Biscuits <span class="rev">(7 reviews)</span></p>
+          <p class="card-price"><b>₹60</b></p>
+          <button type="button" class="btn btn-saffron add-to-cart">Add to cart</button>
         </div>
       </li>
-      <li class="product" data-cat="tea">
-        <a class="product-media" href="/products/niloufer-platinum-tea-powder"><img src="images/tea-platinum.webp" data-remote="Niloufer_Platinum_Tea_Powder.webp" alt="Niloufer Platinum Tea Powder" loading="lazy" width="600" height="600"></a>
-        <div class="product-body">
-          <p class="reviews">3 reviews</p>
+      <li class="product card" data-cat="tea">
+        <a class="card-media" href="/products/niloufer-platinum-tea-powder"><img src="images/tea-platinum.webp" data-remote="Niloufer_Platinum_Tea_Powder.webp" alt="Niloufer Platinum Tea Powder" loading="lazy" width="600" height="600"></a>
+        <div class="card-body">
           <h3><a href="/products/niloufer-platinum-tea-powder">Niloufer Platinum Tea Powder</a></h3>
-          <div class="buy"><p class="price"><b>₹190</b></p><button type="button" class="add add-to-cart" aria-label="Add Niloufer Platinum Tea Powder to cart">+</button></div>
+          <p class="card-sub">Tea powder <span class="rev">(3 reviews)</span></p>
+          <p class="card-price"><b>₹190</b></p>
+          <button type="button" class="btn btn-saffron add-to-cart">Add to cart</button>
         </div>
       </li>
-      <li class="product" data-cat="tea">
-        <a class="product-media" href="/products/niloufer-double-delight-tea-powder"><img src="images/tea-double-delight.webp" data-remote="Niloufer_Double_Delight_Tea_Powder.webp" alt="Niloufer Double Delight Tea Powder" loading="lazy" width="600" height="600"></a>
-        <div class="product-body">
-          <p class="reviews">1 review</p>
+      <li class="product card" data-cat="tea">
+        <a class="card-media" href="/products/niloufer-double-delight-tea-powder"><img src="images/tea-double-delight.webp" data-remote="Niloufer_Double_Delight_Tea_Powder.webp" alt="Niloufer Double Delight Tea Powder" loading="lazy" width="600" height="600"></a>
+        <div class="card-body">
           <h3><a href="/products/niloufer-double-delight-tea-powder">Niloufer Double Delight Tea Powder</a></h3>
-          <div class="buy"><p class="price"><b>₹160</b></p><button type="button" class="add add-to-cart" aria-label="Add Niloufer Double Delight Tea Powder to cart">+</button></div>
+          <p class="card-sub">Tea powder <span class="rev">(1 review)</span></p>
+          <p class="card-price"><b>₹160</b></p>
+          <button type="button" class="btn btn-saffron add-to-cart">Add to cart</button>
         </div>
       </li>
-      <li class="product" data-cat="tea">
-        <a class="product-media" href="/products/niloufer-supreme-dust-tea-powder"><img src="images/tea-supreme.webp" data-remote="Niloufer_Supreme_Tea_Powder_front.webp" alt="Niloufer Supreme Tea Powder" loading="lazy" width="600" height="600"></a>
-        <div class="product-body">
-          <p class="reviews">&nbsp;</p>
+      <li class="product card" data-cat="tea">
+        <a class="card-media" href="/products/niloufer-supreme-dust-tea-powder"><img src="images/tea-supreme.webp" data-remote="Niloufer_Supreme_Tea_Powder_front.webp" alt="Niloufer Supreme Tea Powder" loading="lazy" width="600" height="600"></a>
+        <div class="card-body">
           <h3><a href="/products/niloufer-supreme-dust-tea-powder">Niloufer Supreme Tea Powder</a></h3>
-          <div class="buy"><p class="price"><b>₹160</b></p><button type="button" class="add add-to-cart" aria-label="Add Niloufer Supreme Tea Powder to cart">+</button></div>
+          <p class="card-sub">Tea powder</p>
+          <p class="card-price"><b>₹160</b></p>
+          <button type="button" class="btn btn-saffron add-to-cart">Add to cart</button>
         </div>
       </li>
-      <li class="product" data-cat="biscuits">
-        <a class="product-media" href="/products/dry-fruit-biscuits"><img src="images/dry-fruit-biscuits.webp" data-remote="DryFruitBiscuits.webp" alt="Dry Fruit Biscuits" loading="lazy" width="600" height="600"></a>
-        <div class="product-body">
-          <p class="reviews">1 review</p>
+      <li class="product card" data-cat="biscuits">
+        <a class="card-media" href="/products/dry-fruit-biscuits"><img src="images/dry-fruit-biscuits.webp" data-remote="DryFruitBiscuits.webp" alt="Dry Fruit Biscuits" loading="lazy" width="600" height="600"></a>
+        <div class="card-body">
           <h3><a href="/products/dry-fruit-biscuits">Dry Fruit Biscuits</a></h3>
-          <div class="buy"><p class="price"><b>₹140</b></p><button type="button" class="add add-to-cart" aria-label="Add Dry Fruit Biscuits to cart">+</button></div>
+          <p class="card-sub">Biscuits <span class="rev">(1 review)</span></p>
+          <p class="card-price"><b>₹140</b></p>
+          <button type="button" class="btn btn-saffron add-to-cart">Add to cart</button>
         </div>
       </li>
-      <li class="product product-cta" data-cat="all">
+      <li class="product card card-cta" data-cat="all">
         <a href="/collections/combo">
           <span class="kicker">Better together</span>
           <b>All chai biscuit combos</b>
